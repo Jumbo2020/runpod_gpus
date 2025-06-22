@@ -1,4 +1,4 @@
-name: RunPod GPU DB Workflow
+name: RunPod GPUs DB Workflow
 
 on:
   schedule:
