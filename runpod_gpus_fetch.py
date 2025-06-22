@@ -47,7 +47,7 @@ try:
     response.raise_for_status()  # Raise an HTTPError for bad responses (4xx or 5xx)
 
     data = response.json().get("data", {}).get("gpuTypes", [])
-    with open("gpu_prices.json", "w") as f:
+    with open("runpod_gpus_db.json", "w") as f:
         json.dump(data, f, indent=2)
     print("✅ Saved runpod_gpus_db.json with full info")
 
