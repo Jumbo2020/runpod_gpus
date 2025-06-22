@@ -49,7 +49,7 @@ try:
     data = response.json().get("data", {}).get("gpuTypes", [])
     with open("gpu_prices.json", "w") as f:
         json.dump(data, f, indent=2)
-    print("✅ Saved gpu_prices.json with full pricing and location info")
+    print("✅ Saved runpod_gpus_db.json with full info")
 
 except requests.exceptions.HTTPError as http_err:
     print(f"❌ HTTP error occurred: {http_err}")
