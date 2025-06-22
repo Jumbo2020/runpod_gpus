@@ -1,4 +1,4 @@
-name: RunPod GPU Prices Auto-Update
+name: RunPod GPU DB Workflow
 
 on:
   schedule:
@@ -22,10 +22,10 @@ jobs:
       - name: Install dependencies
         run: pip install requests
 
-      - name: Run GPU price fetch script
-        # Ensure your Python script (e.g., runpod_fetch.py) accesses
+      - name: Run GPU fetch script
+        # Ensure your Python script accesses
         # the RUNPOD_KEY from environment variables as discussed previously.
-        run: python runpod_fetch.py
+        run: python runpod_gpus_fetch.py
         env:
           RUNPOD_KEY: ${{ secrets.RUNPOD_KEY }} # Pass the secret as an environment variable
 
@@ -40,7 +40,7 @@ jobs:
           git config --global user.email "actions@github.com"
 
           echo "📦 Adding file"
-          git add gpu_prices.json
+          git add runpod-gpus-db.json
 
           echo "📝 Checking for changes"
           # Check if there are any actual changes before committing
