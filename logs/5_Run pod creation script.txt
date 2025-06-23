@@ -1,0 +1,33 @@
+﻿2025-06-23T13:09:16.4995142Z ##[debug]Evaluating: secrets.RUNPOD_KEY
+2025-06-23T13:09:16.4995557Z ##[debug]Evaluating Index:
+2025-06-23T13:09:16.4995803Z ##[debug]..Evaluating secrets:
+2025-06-23T13:09:16.4996096Z ##[debug]..=> Object
+2025-06-23T13:09:16.4996402Z ##[debug]..Evaluating String:
+2025-06-23T13:09:16.4996635Z ##[debug]..=> 'RUNPOD_KEY'
+2025-06-23T13:09:16.4997316Z ##[debug]=> '***'
+2025-06-23T13:09:16.4997702Z ##[debug]Result: '***'
+2025-06-23T13:09:16.5001361Z ##[debug]Evaluating condition for step: 'Run pod creation script'
+2025-06-23T13:09:16.5002984Z ##[debug]Evaluating: success()
+2025-06-23T13:09:16.5003364Z ##[debug]Evaluating success:
+2025-06-23T13:09:16.5003812Z ##[debug]=> true
+2025-06-23T13:09:16.5004180Z ##[debug]Result: true
+2025-06-23T13:09:16.5004724Z ##[debug]Starting: Run pod creation script
+2025-06-23T13:09:16.5015196Z ##[debug]Loading inputs
+2025-06-23T13:09:16.5016219Z ##[debug]Loading env
+2025-06-23T13:09:16.5021030Z ##[group]Run python create_pod.py
+2025-06-23T13:09:16.5021311Z [36;1mpython create_pod.py[0m
+2025-06-23T13:09:16.5083332Z shell: /usr/bin/bash -e {0}
+2025-06-23T13:09:16.5083571Z env:
+2025-06-23T13:09:16.5083807Z   pythonLocation: /opt/hostedtoolcache/Python/3.10.18/x64
+2025-06-23T13:09:16.5084223Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.10.18/x64/lib/pkgconfig
+2025-06-23T13:09:16.5084617Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.10.18/x64
+2025-06-23T13:09:16.5084970Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.10.18/x64
+2025-06-23T13:09:16.5085341Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.10.18/x64
+2025-06-23T13:09:16.5085702Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.10.18/x64/lib
+2025-06-23T13:09:16.5086158Z   RUNPOD_KEY: ***
+2025-06-23T13:09:16.5086361Z ##[endgroup]
+2025-06-23T13:09:16.5144762Z ##[debug]/usr/bin/bash -e /home/runner/work/_temp/e8dbceea-4528-4f0d-93e5-72faf46269c9.sh
+2025-06-23T13:09:16.9007335Z ✅ Pod Created:
+2025-06-23T13:09:16.9008121Z null
+2025-06-23T13:09:16.9008704Z ℹ️ Endpoint URL not available via GraphQL. Use RunPod console to access.
+2025-06-23T13:09:16.9153836Z ##[debug]Finishing: Run pod creation script

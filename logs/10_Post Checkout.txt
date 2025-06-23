@@ -1,0 +1,58 @@
+﻿2025-06-23T13:09:17.0860865Z ##[debug]Evaluating condition for step: 'Post Checkout'
+2025-06-23T13:09:17.0864111Z ##[debug]Evaluating: always()
+2025-06-23T13:09:17.0864467Z ##[debug]Evaluating always:
+2025-06-23T13:09:17.0865344Z ##[debug]=> true
+2025-06-23T13:09:17.0865677Z ##[debug]Result: true
+2025-06-23T13:09:17.0866236Z ##[debug]Starting: Post Checkout
+2025-06-23T13:09:17.0906975Z ##[debug]Loading inputs
+2025-06-23T13:09:17.0908397Z ##[debug]Evaluating: github.repository
+2025-06-23T13:09:17.0908678Z ##[debug]Evaluating Index:
+2025-06-23T13:09:17.0908930Z ##[debug]..Evaluating github:
+2025-06-23T13:09:17.0909179Z ##[debug]..=> Object
+2025-06-23T13:09:17.0909408Z ##[debug]..Evaluating String:
+2025-06-23T13:09:17.0909678Z ##[debug]..=> 'repository'
+2025-06-23T13:09:17.0909971Z ##[debug]=> 'Jumbo2020/runpod_gpus'
+2025-06-23T13:09:17.0910238Z ##[debug]Result: 'Jumbo2020/runpod_gpus'
+2025-06-23T13:09:17.0911906Z ##[debug]Evaluating: github.token
+2025-06-23T13:09:17.0912164Z ##[debug]Evaluating Index:
+2025-06-23T13:09:17.0912382Z ##[debug]..Evaluating github:
+2025-06-23T13:09:17.0912645Z ##[debug]..=> Object
+2025-06-23T13:09:17.0912849Z ##[debug]..Evaluating String:
+2025-06-23T13:09:17.0913068Z ##[debug]..=> 'token'
+2025-06-23T13:09:17.0913510Z ##[debug]=> '***'
+2025-06-23T13:09:17.0913821Z ##[debug]Result: '***'
+2025-06-23T13:09:17.0921285Z ##[debug]Loading env
+2025-06-23T13:09:17.0924641Z Post job cleanup.
+2025-06-23T13:09:17.1617376Z ##[debug]Getting git version
+2025-06-23T13:09:17.1630215Z [command]/usr/bin/git version
+2025-06-23T13:09:17.1664458Z git version 2.49.0
+2025-06-23T13:09:17.1686696Z ##[debug]0
+2025-06-23T13:09:17.1690150Z ##[debug]git version 2.49.0
+2025-06-23T13:09:17.1690541Z ##[debug]
+2025-06-23T13:09:17.1691692Z ##[debug]Set git useragent to: git/2.49.0 (github-actions-checkout)
+2025-06-23T13:09:17.1692801Z ::add-mask::***
+2025-06-23T13:09:17.1708010Z Temporarily overriding HOME='/home/runner/work/_temp/47ea4133-fb33-4424-8152-3f5a29511919' before making global git config changes
+2025-06-23T13:09:17.1709354Z Adding repository directory to the temporary git global config as a safe directory
+2025-06-23T13:09:17.1712985Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/runpod_gpus/runpod_gpus
+2025-06-23T13:09:17.1737307Z ##[debug]0
+2025-06-23T13:09:17.1738238Z ##[debug]
+2025-06-23T13:09:17.1744300Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2025-06-23T13:09:17.1769427Z ##[debug]1
+2025-06-23T13:09:17.1770018Z ##[debug]
+2025-06-23T13:09:17.1774186Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2025-06-23T13:09:17.2001623Z ##[debug]0
+2025-06-23T13:09:17.2002321Z ##[debug]
+2025-06-23T13:09:17.2006997Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2025-06-23T13:09:17.2027424Z http.https://github.com/.extraheader
+2025-06-23T13:09:17.2033847Z ##[debug]0
+2025-06-23T13:09:17.2034490Z ##[debug]http.https://github.com/.extraheader
+2025-06-23T13:09:17.2034937Z ##[debug]
+2025-06-23T13:09:17.2038621Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2025-06-23T13:09:17.2062588Z ##[debug]0
+2025-06-23T13:09:17.2063098Z ##[debug]
+2025-06-23T13:09:17.2066351Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2025-06-23T13:09:17.2282304Z ##[debug]0
+2025-06-23T13:09:17.2282821Z ##[debug]
+2025-06-23T13:09:17.2283331Z ##[debug]Unsetting HOME override
+2025-06-23T13:09:17.2342577Z ##[debug]Node Action run completed with exit code 0
+2025-06-23T13:09:17.2344796Z ##[debug]Finishing: Post Checkout

@@ -1,0 +1,70 @@
+﻿2025-06-23T13:09:11.8321429Z ##[debug]Starting: Set up job
+2025-06-23T13:09:11.8322472Z Current runner version: '2.325.0'
+2025-06-23T13:09:11.8344641Z ##[group]Operating System
+2025-06-23T13:09:11.8345411Z Ubuntu
+2025-06-23T13:09:11.8345916Z 24.04.2
+2025-06-23T13:09:11.8346416Z LTS
+2025-06-23T13:09:11.8346839Z ##[endgroup]
+2025-06-23T13:09:11.8347417Z ##[group]Runner Image
+2025-06-23T13:09:11.8348177Z Image: ubuntu-24.04
+2025-06-23T13:09:11.8348741Z Version: 20250615.1.0
+2025-06-23T13:09:11.8349770Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20250615.1/images/ubuntu/Ubuntu2404-Readme.md
+2025-06-23T13:09:11.8351136Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250615.1
+2025-06-23T13:09:11.8352026Z ##[endgroup]
+2025-06-23T13:09:11.8352563Z ##[group]Runner Image Provisioner
+2025-06-23T13:09:11.8353414Z 2.0.437.1
+2025-06-23T13:09:11.8354113Z ##[endgroup]
+2025-06-23T13:09:11.8356488Z ##[group]GITHUB_TOKEN Permissions
+2025-06-23T13:09:11.8358730Z Actions: write
+2025-06-23T13:09:11.8359400Z Attestations: write
+2025-06-23T13:09:11.8360012Z Checks: write
+2025-06-23T13:09:11.8360513Z Contents: write
+2025-06-23T13:09:11.8360976Z Deployments: write
+2025-06-23T13:09:11.8361534Z Discussions: write
+2025-06-23T13:09:11.8362063Z Issues: write
+2025-06-23T13:09:11.8362610Z Metadata: read
+2025-06-23T13:09:11.8363141Z Models: read
+2025-06-23T13:09:11.8363597Z Packages: write
+2025-06-23T13:09:11.8364096Z Pages: write
+2025-06-23T13:09:11.8364635Z PullRequests: write
+2025-06-23T13:09:11.8365137Z RepositoryProjects: write
+2025-06-23T13:09:11.8365732Z SecurityEvents: write
+2025-06-23T13:09:11.8366398Z Statuses: write
+2025-06-23T13:09:11.8366866Z ##[endgroup]
+2025-06-23T13:09:11.8369926Z Secret source: Actions
+2025-06-23T13:09:11.8371010Z ##[debug]Primary repository: Jumbo2020/runpod_gpus
+2025-06-23T13:09:11.8371786Z Prepare workflow directory
+2025-06-23T13:09:11.8437102Z ##[debug]Creating pipeline directory: '/home/runner/work/runpod_gpus'
+2025-06-23T13:09:11.8440767Z ##[debug]Creating workspace directory: '/home/runner/work/runpod_gpus/runpod_gpus'
+2025-06-23T13:09:11.8442844Z ##[debug]Update context data
+2025-06-23T13:09:11.8446052Z ##[debug]Evaluating job-level environment variables
+2025-06-23T13:09:11.8667295Z ##[debug]Evaluating job container
+2025-06-23T13:09:11.8670600Z ##[debug]Evaluating job service containers
+2025-06-23T13:09:11.8673107Z ##[debug]Evaluating job defaults
+2025-06-23T13:09:11.8696723Z Prepare all required actions
+2025-06-23T13:09:11.8734562Z Getting action download info
+2025-06-23T13:09:12.1728936Z ##[group]Download immutable action package 'actions/checkout@v3'
+2025-06-23T13:09:12.1730060Z Version: 3.6.0
+2025-06-23T13:09:12.1730970Z Digest: sha256:942562b9c7d4b1f2557f1da21f4d3eb4eb4fd01f2ad78b2a6e187d1b193e0a0f
+2025-06-23T13:09:12.1732094Z Source commit SHA: f43a0e5ff2bd294095638e18286ca9a3d1956744
+2025-06-23T13:09:12.1732870Z ##[endgroup]
+2025-06-23T13:09:12.1753133Z ##[debug]Copied action archive '/opt/actionarchivecache/actions_checkout/f43a0e5ff2bd294095638e18286ca9a3d1956744.tar.gz' to '/home/runner/work/_actions/_temp_b187824c-5c23-4605-b882-d3e456d470a6/94f5be68-97aa-4493-a304-88c01847eaf4.tar.gz'
+2025-06-23T13:09:12.2275399Z ##[debug]Unwrap 'actions-checkout-f43a0e5' to '/home/runner/work/_actions/actions/checkout/v3'
+2025-06-23T13:09:12.2414753Z ##[debug]Archive '/home/runner/work/_actions/_temp_b187824c-5c23-4605-b882-d3e456d470a6/94f5be68-97aa-4493-a304-88c01847eaf4.tar.gz' has been unzipped into '/home/runner/work/_actions/actions/checkout/v3'.
+2025-06-23T13:09:12.2512080Z ##[group]Download immutable action package 'actions/setup-python@v4'
+2025-06-23T13:09:12.2512970Z Version: 4.9.1
+2025-06-23T13:09:12.2513735Z Digest: sha256:f03e505388af670b5a108629e0ba26befc08d5c62b41f46146a45fe29ae509a5
+2025-06-23T13:09:12.2514630Z Source commit SHA: 7f4fc3e22c37d6ff65e88745f38bd3157c663f7c
+2025-06-23T13:09:12.2515384Z ##[endgroup]
+2025-06-23T13:09:12.3892817Z ##[debug]Download 'https://api.github.com/internal/immutable-actions/actions/setup-python/download/sha256:636a487e66aa64c09f151bce15e76aa7236bcfaec0374f7e097600b4da06a2f2?x-ghcr-actor-id=1006700499&x-ghcr-actor-type=repository&x-ghcr-alg=hmac-sha256&x-ghcr-date=2025-06-23T13:09:12Z&x-ghcr-expires=10m0s&x-ghcr-host=ghcr.io&***
+2025-06-23T13:09:12.4416481Z ##[debug]Unwrap 'action' to '/home/runner/work/_actions/actions/setup-python/v4'
+2025-06-23T13:09:12.4620393Z ##[debug]Archive '/home/runner/work/_actions/_temp_ee6ee7a6-d685-4b7e-9506-fcd27b247c70/85303baa-d6fb-44a9-9ca1-0be886d9ed47.tar.gz' has been unzipped into '/home/runner/work/_actions/actions/setup-python/v4'.
+2025-06-23T13:09:12.4670833Z ##[debug]action.yml for action: '/home/runner/work/_actions/actions/checkout/v3/action.yml'.
+2025-06-23T13:09:12.5209474Z ##[debug]action.yml for action: '/home/runner/work/_actions/actions/setup-python/v4/action.yml'.
+2025-06-23T13:09:12.5408879Z ##[debug]Set step '__actions_checkout' display name to: 'Checkout'
+2025-06-23T13:09:12.5411738Z ##[debug]Set step '__actions_setup-python' display name to: 'Setup Python'
+2025-06-23T13:09:12.5413323Z ##[debug]Set step '__run' display name to: 'Install requests'
+2025-06-23T13:09:12.5414863Z ##[debug]Set step '__run_2' display name to: 'Run pod creation script'
+2025-06-23T13:09:12.5415579Z Complete job name: deploy-pod
+2025-06-23T13:09:12.5436669Z ##[debug]Collect running processes for tracking orphan processes.
+2025-06-23T13:09:12.5645343Z ##[debug]Finishing: Set up job

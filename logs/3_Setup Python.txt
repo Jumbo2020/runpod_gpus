@@ -1,0 +1,77 @@
+﻿2025-06-23T13:09:13.1931883Z ##[debug]Evaluating condition for step: 'Setup Python'
+2025-06-23T13:09:13.1934579Z ##[debug]Evaluating: success()
+2025-06-23T13:09:13.1935458Z ##[debug]Evaluating success:
+2025-06-23T13:09:13.1936295Z ##[debug]=> true
+2025-06-23T13:09:13.1937050Z ##[debug]Result: true
+2025-06-23T13:09:13.1938662Z ##[debug]Starting: Setup Python
+2025-06-23T13:09:13.1980723Z ##[debug]Register post job cleanup for action: actions/setup-python@v4
+2025-06-23T13:09:13.2001013Z ##[debug]Loading inputs
+2025-06-23T13:09:13.2026567Z ##[debug]Evaluating: (((github.server_url == 'https://github.com') && github.token) || '')
+2025-06-23T13:09:13.2028225Z ##[debug]Evaluating Or:
+2025-06-23T13:09:13.2030554Z ##[debug]..Evaluating And:
+2025-06-23T13:09:13.2032840Z ##[debug]....Evaluating Equal:
+2025-06-23T13:09:13.2034464Z ##[debug]......Evaluating Index:
+2025-06-23T13:09:13.2035186Z ##[debug]........Evaluating github:
+2025-06-23T13:09:13.2035924Z ##[debug]........=> Object
+2025-06-23T13:09:13.2036580Z ##[debug]........Evaluating String:
+2025-06-23T13:09:13.2037320Z ##[debug]........=> 'server_url'
+2025-06-23T13:09:13.2038245Z ##[debug]......=> 'https://github.com'
+2025-06-23T13:09:13.2039029Z ##[debug]......Evaluating String:
+2025-06-23T13:09:13.2039731Z ##[debug]......=> 'https://github.com'
+2025-06-23T13:09:13.2043260Z ##[debug]....=> true
+2025-06-23T13:09:13.2044064Z ##[debug]....Evaluating Index:
+2025-06-23T13:09:13.2044765Z ##[debug]......Evaluating github:
+2025-06-23T13:09:13.2045445Z ##[debug]......=> Object
+2025-06-23T13:09:13.2046048Z ##[debug]......Evaluating String:
+2025-06-23T13:09:13.2046708Z ##[debug]......=> 'token'
+2025-06-23T13:09:13.2047661Z ##[debug]....=> '***'
+2025-06-23T13:09:13.2048959Z ##[debug]..=> '***'
+2025-06-23T13:09:13.2050047Z ##[debug]=> '***'
+2025-06-23T13:09:13.2055910Z ##[debug]Expanded: ((('https://github.com' == 'https://github.com') && '***') || '')
+2025-06-23T13:09:13.2057451Z ##[debug]Result: '***'
+2025-06-23T13:09:13.2064003Z ##[debug]Loading env
+2025-06-23T13:09:13.2073527Z ##[group]Run actions/setup-python@v4
+2025-06-23T13:09:13.2074248Z with:
+2025-06-23T13:09:13.2074674Z   python-version: 3.10
+2025-06-23T13:09:13.2075238Z   check-latest: false
+2025-06-23T13:09:13.2076022Z   token: ***
+2025-06-23T13:09:13.2076497Z   update-environment: true
+2025-06-23T13:09:13.2077133Z   allow-prereleases: false
+2025-06-23T13:09:13.2077841Z ##[endgroup]
+2025-06-23T13:09:13.3739946Z ##[debug]Python is expected to be installed into /opt/hostedtoolcache
+2025-06-23T13:09:13.3742121Z ::group::Installed versions
+2025-06-23T13:09:13.3742835Z ##[group]Installed versions
+2025-06-23T13:09:13.3746264Z ##[debug]Semantic version spec of 3.10 is 3.10
+2025-06-23T13:09:13.3749472Z ##[debug]isExplicit: 
+2025-06-23T13:09:13.3750885Z ##[debug]explicit? false
+2025-06-23T13:09:13.3756342Z ##[debug]isExplicit: 3.10.18
+2025-06-23T13:09:13.3758090Z ##[debug]explicit? true
+2025-06-23T13:09:13.3759524Z ##[debug]isExplicit: 3.11.13
+2025-06-23T13:09:13.3760654Z ##[debug]explicit? true
+2025-06-23T13:09:13.3762003Z ##[debug]isExplicit: 3.12.11
+2025-06-23T13:09:13.3763214Z ##[debug]explicit? true
+2025-06-23T13:09:13.3764202Z ##[debug]isExplicit: 3.13.5
+2025-06-23T13:09:13.3765204Z ##[debug]explicit? true
+2025-06-23T13:09:13.3766152Z ##[debug]isExplicit: 3.9.23
+2025-06-23T13:09:13.3767214Z ##[debug]explicit? true
+2025-06-23T13:09:13.3768366Z ##[debug]evaluating 5 versions
+2025-06-23T13:09:13.3792307Z ##[debug]matched: 3.10.18
+2025-06-23T13:09:13.3794010Z ##[debug]checking cache: /opt/hostedtoolcache/Python/3.10.18/x64
+2025-06-23T13:09:13.3795558Z ##[debug]Found tool in cache Python 3.10.18 x64
+2025-06-23T13:09:13.3810004Z Successfully set up CPython (3.10.18)
+2025-06-23T13:09:13.3811984Z ::endgroup::
+2025-06-23T13:09:13.3812762Z ##[endgroup]
+2025-06-23T13:09:13.3821225Z ##[add-matcher]/home/runner/work/_actions/actions/setup-python/v4/.github/python.json
+2025-06-23T13:09:13.3834143Z ##[debug]Added matchers: 'python'. Problem matchers scan action output for known warning or error strings and report these inline.
+2025-06-23T13:09:13.3874766Z ##[debug]Node Action run completed with exit code 0
+2025-06-23T13:09:13.3884362Z ##[debug]pythonLocation='/opt/hostedtoolcache/Python/3.10.18/x64'
+2025-06-23T13:09:13.3886100Z ##[debug]PKG_CONFIG_PATH='/opt/hostedtoolcache/Python/3.10.18/x64/lib/pkgconfig'
+2025-06-23T13:09:13.3887630Z ##[debug]pythonLocation='/opt/hostedtoolcache/Python/3.10.18/x64'
+2025-06-23T13:09:13.3889240Z ##[debug]Python_ROOT_DIR='/opt/hostedtoolcache/Python/3.10.18/x64'
+2025-06-23T13:09:13.3890584Z ##[debug]Python2_ROOT_DIR='/opt/hostedtoolcache/Python/3.10.18/x64'
+2025-06-23T13:09:13.3891898Z ##[debug]Python3_ROOT_DIR='/opt/hostedtoolcache/Python/3.10.18/x64'
+2025-06-23T13:09:13.3893350Z ##[debug]PKG_CONFIG_PATH='/opt/hostedtoolcache/Python/3.10.18/x64/lib/pkgconfig'
+2025-06-23T13:09:13.3894855Z ##[debug]LD_LIBRARY_PATH='/opt/hostedtoolcache/Python/3.10.18/x64/lib'
+2025-06-23T13:09:13.3900049Z ##[debug]Set output python-version = 3.10.18
+2025-06-23T13:09:13.3901508Z ##[debug]Set output python-path = /opt/hostedtoolcache/Python/3.10.18/x64/bin/python
+2025-06-23T13:09:13.3903415Z ##[debug]Finishing: Setup Python

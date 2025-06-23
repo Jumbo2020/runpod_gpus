@@ -1,0 +1,188 @@
+﻿2025-06-23T13:09:12.5759027Z ##[debug]Evaluating condition for step: 'Checkout'
+2025-06-23T13:09:12.5793333Z ##[debug]Evaluating: success()
+2025-06-23T13:09:12.5798538Z ##[debug]Evaluating success:
+2025-06-23T13:09:12.5813618Z ##[debug]=> true
+2025-06-23T13:09:12.5819771Z ##[debug]Result: true
+2025-06-23T13:09:12.5841714Z ##[debug]Starting: Checkout
+2025-06-23T13:09:12.5903297Z ##[debug]Register post job cleanup for action: actions/checkout@v3
+2025-06-23T13:09:12.5975846Z ##[debug]Loading inputs
+2025-06-23T13:09:12.5983528Z ##[debug]Evaluating: github.repository
+2025-06-23T13:09:12.5984658Z ##[debug]Evaluating Index:
+2025-06-23T13:09:12.5986717Z ##[debug]..Evaluating github:
+2025-06-23T13:09:12.5988219Z ##[debug]..=> Object
+2025-06-23T13:09:12.5993712Z ##[debug]..Evaluating String:
+2025-06-23T13:09:12.5994586Z ##[debug]..=> 'repository'
+2025-06-23T13:09:12.5999103Z ##[debug]=> 'Jumbo2020/runpod_gpus'
+2025-06-23T13:09:12.6000617Z ##[debug]Result: 'Jumbo2020/runpod_gpus'
+2025-06-23T13:09:12.6003437Z ##[debug]Evaluating: github.token
+2025-06-23T13:09:12.6003983Z ##[debug]Evaluating Index:
+2025-06-23T13:09:12.6004457Z ##[debug]..Evaluating github:
+2025-06-23T13:09:12.6004928Z ##[debug]..=> Object
+2025-06-23T13:09:12.6005428Z ##[debug]..Evaluating String:
+2025-06-23T13:09:12.6005893Z ##[debug]..=> 'token'
+2025-06-23T13:09:12.6006625Z ##[debug]=> '***'
+2025-06-23T13:09:12.6007247Z ##[debug]Result: '***'
+2025-06-23T13:09:12.6018804Z ##[debug]Loading env
+2025-06-23T13:09:12.6075590Z ##[group]Run actions/checkout@v3
+2025-06-23T13:09:12.6076293Z with:
+2025-06-23T13:09:12.6076699Z   repository: Jumbo2020/runpod_gpus
+2025-06-23T13:09:12.6077338Z   token: ***
+2025-06-23T13:09:12.6077719Z   ssh-strict: true
+2025-06-23T13:09:12.6078360Z   persist-credentials: true
+2025-06-23T13:09:12.6078805Z   clean: true
+2025-06-23T13:09:12.6079208Z   sparse-checkout-cone-mode: true
+2025-06-23T13:09:12.6079679Z   fetch-depth: 1
+2025-06-23T13:09:12.6080068Z   fetch-tags: false
+2025-06-23T13:09:12.6080450Z   lfs: false
+2025-06-23T13:09:12.6080808Z   submodules: false
+2025-06-23T13:09:12.6081223Z   set-safe-directory: true
+2025-06-23T13:09:12.6081897Z ##[endgroup]
+2025-06-23T13:09:12.7408663Z ##[debug]GITHUB_WORKSPACE = '/home/runner/work/runpod_gpus/runpod_gpus'
+2025-06-23T13:09:12.7410862Z ##[debug]qualified repository = 'Jumbo2020/runpod_gpus'
+2025-06-23T13:09:12.7412249Z ##[debug]ref = 'refs/heads/main'
+2025-06-23T13:09:12.7413464Z ##[debug]commit = 'be0cab54fc99e6e954c9c3ac1e040ee537f931c8'
+2025-06-23T13:09:12.7414336Z ##[debug]clean = true
+2025-06-23T13:09:12.7415327Z ##[debug]fetch depth = 1
+2025-06-23T13:09:12.7416005Z ##[debug]fetch tags = false
+2025-06-23T13:09:12.7416679Z ##[debug]lfs = false
+2025-06-23T13:09:12.7417319Z ##[debug]submodules = false
+2025-06-23T13:09:12.7418556Z ##[debug]recursive submodules = false
+2025-06-23T13:09:12.7419823Z ##[debug]GitHub Host URL = 
+2025-06-23T13:09:12.7421456Z ::add-matcher::/home/runner/work/_actions/actions/checkout/v3/dist/problem-matcher.json
+2025-06-23T13:09:12.7493799Z ##[debug]Added matchers: 'checkout-git'. Problem matchers scan action output for known warning or error strings and report these inline.
+2025-06-23T13:09:12.7498913Z Syncing repository: Jumbo2020/runpod_gpus
+2025-06-23T13:09:12.7500083Z ::group::Getting Git version info
+2025-06-23T13:09:12.7501248Z ##[group]Getting Git version info
+2025-06-23T13:09:12.7501958Z Working directory is '/home/runner/work/runpod_gpus/runpod_gpus'
+2025-06-23T13:09:12.7502904Z ##[debug]Getting git version
+2025-06-23T13:09:12.7503420Z [command]/usr/bin/git version
+2025-06-23T13:09:12.7534183Z git version 2.49.0
+2025-06-23T13:09:12.7558364Z ##[debug]0
+2025-06-23T13:09:12.7559814Z ##[debug]git version 2.49.0
+2025-06-23T13:09:12.7560635Z ##[debug]
+2025-06-23T13:09:12.7561912Z ##[debug]Set git useragent to: git/2.49.0 (github-actions-checkout)
+2025-06-23T13:09:12.7562897Z ::endgroup::
+2025-06-23T13:09:12.7563356Z ##[endgroup]
+2025-06-23T13:09:12.7568851Z ::add-mask::***
+2025-06-23T13:09:12.7578175Z Temporarily overriding HOME='/home/runner/work/_temp/bc62a283-8b0e-48cf-afbc-42312ef9e4ac' before making global git config changes
+2025-06-23T13:09:12.7579804Z Adding repository directory to the temporary git global config as a safe directory
+2025-06-23T13:09:12.7581697Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/runpod_gpus/runpod_gpus
+2025-06-23T13:09:12.7607106Z ##[debug]0
+2025-06-23T13:09:12.7607930Z ##[debug]
+2025-06-23T13:09:12.7612729Z Deleting the contents of '/home/runner/work/runpod_gpus/runpod_gpus'
+2025-06-23T13:09:12.7616090Z ::group::Initializing the repository
+2025-06-23T13:09:12.7616653Z ##[group]Initializing the repository
+2025-06-23T13:09:12.7619459Z [command]/usr/bin/git init /home/runner/work/runpod_gpus/runpod_gpus
+2025-06-23T13:09:12.7672736Z hint: Using 'master' as the name for the initial branch. This default branch name
+2025-06-23T13:09:12.7673914Z hint: is subject to change. To configure the initial branch name to use in all
+2025-06-23T13:09:12.7675410Z hint: of your new repositories, which will suppress this warning, call:
+2025-06-23T13:09:12.7676585Z hint:
+2025-06-23T13:09:12.7677311Z hint: 	git config --global init.defaultBranch <name>
+2025-06-23T13:09:12.7678396Z hint:
+2025-06-23T13:09:12.7679321Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2025-06-23T13:09:12.7680222Z hint: 'development'. The just-created branch can be renamed via this command:
+2025-06-23T13:09:12.7680917Z hint:
+2025-06-23T13:09:12.7681286Z hint: 	git branch -m <name>
+2025-06-23T13:09:12.7682033Z Initialized empty Git repository in /home/runner/work/runpod_gpus/runpod_gpus/.git/
+2025-06-23T13:09:12.7683656Z ##[debug]0
+2025-06-23T13:09:12.7684748Z ##[debug]Initialized empty Git repository in /home/runner/work/runpod_gpus/runpod_gpus/.git/
+2025-06-23T13:09:12.7685521Z ##[debug]
+2025-06-23T13:09:12.7686852Z [command]/usr/bin/git remote add origin https://github.com/Jumbo2020/runpod_gpus
+2025-06-23T13:09:12.7715433Z ##[debug]0
+2025-06-23T13:09:12.7716225Z ##[debug]
+2025-06-23T13:09:12.7716888Z ::endgroup::
+2025-06-23T13:09:12.7717262Z ##[endgroup]
+2025-06-23T13:09:12.7718219Z ::group::Disabling automatic garbage collection
+2025-06-23T13:09:12.7719008Z ##[group]Disabling automatic garbage collection
+2025-06-23T13:09:12.7719659Z [command]/usr/bin/git config --local gc.auto 0
+2025-06-23T13:09:12.7743675Z ##[debug]0
+2025-06-23T13:09:12.7744329Z ##[debug]
+2025-06-23T13:09:12.7744910Z ::endgroup::
+2025-06-23T13:09:12.7745273Z ##[endgroup]
+2025-06-23T13:09:12.7745892Z ::group::Setting up auth
+2025-06-23T13:09:12.7746533Z ##[group]Setting up auth
+2025-06-23T13:09:12.7749668Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2025-06-23T13:09:12.7771539Z ##[debug]1
+2025-06-23T13:09:12.7772192Z ##[debug]
+2025-06-23T13:09:12.7775503Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2025-06-23T13:09:12.8036444Z ##[debug]0
+2025-06-23T13:09:12.8037525Z ##[debug]
+2025-06-23T13:09:12.8040913Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2025-06-23T13:09:12.8066884Z ##[debug]1
+2025-06-23T13:09:12.8071852Z ##[debug]
+2025-06-23T13:09:12.8073599Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2025-06-23T13:09:12.8292044Z ##[debug]0
+2025-06-23T13:09:12.8293200Z ##[debug]
+2025-06-23T13:09:12.8299779Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2025-06-23T13:09:12.8323476Z ##[debug]0
+2025-06-23T13:09:12.8324649Z ##[debug]
+2025-06-23T13:09:12.8331876Z ::endgroup::
+2025-06-23T13:09:12.8332538Z ##[endgroup]
+2025-06-23T13:09:12.8333747Z ::group::Fetching the repository
+2025-06-23T13:09:12.8334629Z ##[group]Fetching the repository
+2025-06-23T13:09:12.8341515Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --progress --no-recurse-submodules --depth=1 origin +be0cab54fc99e6e954c9c3ac1e040ee537f931c8:refs/remotes/origin/main
+2025-06-23T13:09:13.1415172Z remote: Enumerating objects: 11, done.        
+2025-06-23T13:09:13.1416538Z remote: Counting objects:   9% (1/11)        
+2025-06-23T13:09:13.1417684Z remote: Counting objects:  18% (2/11)        
+2025-06-23T13:09:13.1418820Z remote: Counting objects:  27% (3/11)        
+2025-06-23T13:09:13.1419484Z remote: Counting objects:  36% (4/11)        
+2025-06-23T13:09:13.1420165Z remote: Counting objects:  45% (5/11)        
+2025-06-23T13:09:13.1420825Z remote: Counting objects:  54% (6/11)        
+2025-06-23T13:09:13.1421495Z remote: Counting objects:  63% (7/11)        
+2025-06-23T13:09:13.1422156Z remote: Counting objects:  72% (8/11)        
+2025-06-23T13:09:13.1422817Z remote: Counting objects:  81% (9/11)        
+2025-06-23T13:09:13.1423434Z remote: Counting objects:  90% (10/11)        
+2025-06-23T13:09:13.1424014Z remote: Counting objects: 100% (11/11)        
+2025-06-23T13:09:13.1424628Z remote: Counting objects: 100% (11/11), done.        
+2025-06-23T13:09:13.1425666Z remote: Compressing objects:  10% (1/10)        
+2025-06-23T13:09:13.1426617Z remote: Compressing objects:  20% (2/10)        
+2025-06-23T13:09:13.1427539Z remote: Compressing objects:  30% (3/10)        
+2025-06-23T13:09:13.1428594Z remote: Compressing objects:  40% (4/10)        
+2025-06-23T13:09:13.1429238Z remote: Compressing objects:  50% (5/10)        
+2025-06-23T13:09:13.1429834Z remote: Compressing objects:  60% (6/10)        
+2025-06-23T13:09:13.1430414Z remote: Compressing objects:  70% (7/10)        
+2025-06-23T13:09:13.1430988Z remote: Compressing objects:  80% (8/10)        
+2025-06-23T13:09:13.1431685Z remote: Compressing objects:  90% (9/10)        
+2025-06-23T13:09:13.1432332Z remote: Compressing objects: 100% (10/10)        
+2025-06-23T13:09:13.1432964Z remote: Compressing objects: 100% (10/10), done.        
+2025-06-23T13:09:13.1433728Z remote: Total 11 (delta 1), reused 1 (delta 0), pack-reused 0 (from 0)        
+2025-06-23T13:09:13.1617630Z From https://github.com/Jumbo2020/runpod_gpus
+2025-06-23T13:09:13.1619590Z  * [new ref]         be0cab54fc99e6e954c9c3ac1e040ee537f931c8 -> origin/main
+2025-06-23T13:09:13.1646751Z ##[debug]0
+2025-06-23T13:09:13.1648153Z ##[debug]
+2025-06-23T13:09:13.1649676Z ::endgroup::
+2025-06-23T13:09:13.1650377Z ##[endgroup]
+2025-06-23T13:09:13.1651900Z ::group::Determining the checkout info
+2025-06-23T13:09:13.1652873Z ##[group]Determining the checkout info
+2025-06-23T13:09:13.1654755Z ::endgroup::
+2025-06-23T13:09:13.1655419Z ##[endgroup]
+2025-06-23T13:09:13.1656873Z ::group::Checking out the ref
+2025-06-23T13:09:13.1657717Z ##[group]Checking out the ref
+2025-06-23T13:09:13.1659414Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2025-06-23T13:09:13.1703323Z Switched to a new branch 'main'
+2025-06-23T13:09:13.1706043Z branch 'main' set up to track 'origin/main'.
+2025-06-23T13:09:13.1712771Z ##[debug]0
+2025-06-23T13:09:13.1714235Z ##[debug]branch 'main' set up to track 'origin/main'.
+2025-06-23T13:09:13.1715196Z ##[debug]
+2025-06-23T13:09:13.1716602Z ::endgroup::
+2025-06-23T13:09:13.1717133Z ##[endgroup]
+2025-06-23T13:09:13.1747541Z ##[debug]0
+2025-06-23T13:09:13.1749882Z ##[debug]commit be0cab54fc99e6e954c9c3ac1e040ee537f931c8
+2025-06-23T13:09:13.1750758Z ##[debug]Author: Jumbo2020 <67777888+Jumbo2020@users.noreply.github.com>
+2025-06-23T13:09:13.1752673Z ##[debug]Date:   Mon Jun 23 09:21:17 2025 +0300
+2025-06-23T13:09:13.1753340Z ##[debug]
+2025-06-23T13:09:13.1753760Z ##[debug]    Update create_pod.py
+2025-06-23T13:09:13.1754299Z ##[debug]
+2025-06-23T13:09:13.1754833Z [command]/usr/bin/git log -1 --format='%H'
+2025-06-23T13:09:13.1775074Z 'be0cab54fc99e6e954c9c3ac1e040ee537f931c8'
+2025-06-23T13:09:13.1780869Z ##[debug]0
+2025-06-23T13:09:13.1781822Z ##[debug]'be0cab54fc99e6e954c9c3ac1e040ee537f931c8'
+2025-06-23T13:09:13.1782481Z ##[debug]
+2025-06-23T13:09:13.1785215Z ##[debug]Unsetting HOME override
+2025-06-23T13:09:13.1792759Z ::remove-matcher owner=checkout-git::
+2025-06-23T13:09:13.1804635Z ##[debug]Removed matchers: 'checkout-git'
+2025-06-23T13:09:13.1869221Z ##[debug]Node Action run completed with exit code 0
+2025-06-23T13:09:13.1902511Z ##[debug]Save intra-action state isPost = true
+2025-06-23T13:09:13.1903395Z ##[debug]Save intra-action state setSafeDirectory = true
+2025-06-23T13:09:13.1904461Z ##[debug]Save intra-action state repositoryPath = /home/runner/work/runpod_gpus/runpod_gpus
+2025-06-23T13:09:13.1912903Z ##[debug]Finishing: Checkout
