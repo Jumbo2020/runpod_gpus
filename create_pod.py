@@ -1,15 +1,15 @@
 import os
 import requests
+import json
 
-# קח את המפתח מה־Secret של GitHub
+# קבלת מפתח ה-API מ-GitHub Secrets
 API_KEY = os.getenv("RUNPOD_KEY")
 if not API_KEY:
     raise Exception("❌ RUNPOD_KEY not found in environment variables.")
 
-# GraphQL endpoint
 URL = "https://api.runpod.io/graphql"
 
-# GraphQL mutation לשיגור Pod
+# GraphQL query: יצירת Pod בסיסי
 query = """
 mutation podFindAndDeployOnDemand($input: PodFindAndDeployOnDemandInput!) {
   podFindAndDeployOnDemand(input: $input) {
@@ -18,14 +18,15 @@ mutation podFindAndDeployOnDemand($input: PodFindAndDeployOnDemandInput!) {
     imageName
     costPerHr
     desiredStatus
-    ipAddress {
-      ip
+    endpoint {
+      id
+      url
     }
   }
 }
 """
 
-# ערכים בסיסיים ליצירת Pod
+# ערכי קלט חיוניים
 variables = {
     "input": {
         "name": "github-pod",
@@ -37,20 +38,23 @@ variables = {
     }
 }
 
-# headers עם Authorization
 headers = {
     "Authorization": f"Bearer {API_KEY}",
     "Content-Type": "application/json"
 }
 
-# שלח את הבקשה
+# שליחת הבקשה
 response = requests.post(URL, headers=headers, json={"query": query, "variables": variables})
 
-# בדוק תקינות
 if response.status_code != 200:
     raise Exception(f"GraphQL request failed: {response.text}")
 
-# הדפס תוצאה
 data = response.json()
+pod_data = data["data"]["podFindAndDeployOnDemand"]
+
 print("✅ Pod Created:")
-print(data["data"]["podFindAndDeployOnDemand"])
+print(json.dumps(pod_data, indent=2))
+
+# שמירה לקובץ
+with open("pod_output.json", "w") as f:
+    json.dump(pod_data, f, indent=2)
