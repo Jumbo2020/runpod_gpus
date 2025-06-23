@@ -20,7 +20,8 @@ mutation podFindAndDeployOnDemand($input: PodFindAndDeployOnDemandInput!) {
     desiredStatus
     endpoint {
       id
-      url
+      host
+      targetPort
     }
   }
 }
@@ -52,8 +53,16 @@ if response.status_code != 200:
 data = response.json()
 pod_data = data["data"]["podFindAndDeployOnDemand"]
 
-print("✅ Pod Created:")
+# הדפסה
+print("\u2705 Pod Created:")
 print(json.dumps(pod_data, indent=2))
+
+# בניית URL מלא במידת הצורך
+if pod_data.get("endpoint"):
+    host = pod_data["endpoint"].get("host")
+    port = pod_data["endpoint"].get("targetPort")
+    if host and port:
+        print(f"\ud83d\udd17 Full URL: http://{host}:{port}")
 
 # שמירה לקובץ
 with open("pod_output.json", "w") as f:
