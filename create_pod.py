@@ -20,8 +20,6 @@ mutation podFindAndDeployOnDemand($input: PodFindAndDeployOnDemandInput!) {
     desiredStatus
     endpoint {
       id
-      host
-      targetPort
     }
   }
 }
@@ -57,12 +55,7 @@ pod_data = data["data"]["podFindAndDeployOnDemand"]
 print("\u2705 Pod Created:")
 print(json.dumps(pod_data, indent=2))
 
-# בניית URL מלא במידת הצורך
-if pod_data.get("endpoint"):
-    host = pod_data["endpoint"].get("host")
-    port = pod_data["endpoint"].get("targetPort")
-    if host and port:
-        print(f"\ud83d\udd17 Full URL: http://{host}:{port}")
+print("\u2139\ufe0f Endpoint URL not available via GraphQL. Use RunPod console to access.")
 
 # שמירה לקובץ
 with open("pod_output.json", "w") as f:
