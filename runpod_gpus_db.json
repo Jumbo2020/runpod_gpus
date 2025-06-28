@@ -192,7 +192,7 @@
     "id": "NVIDIA GeForce RTX 3090 Ti",
     "displayName": "RTX 3090 Ti",
     "memoryInGb": 24,
-    "maxGpuCount": 2,
+    "maxGpuCount": 4,
     "secureCloud": false,
     "communityCloud": true,
     "securePrice": 0.46,
