@@ -631,24 +631,6 @@
     "nodeGroupDatacenters": []
   },
   {
-    "id": "Tesla V100-FHHL-16GB",
-    "displayName": "V100 FHHL",
-    "memoryInGb": 16,
-    "maxGpuCount": 8,
-    "secureCloud": false,
-    "communityCloud": true,
-    "securePrice": 0,
-    "communityPrice": 0.19,
-    "communitySpotPrice": 0.1,
-    "secureSpotPrice": null,
-    "clusterPrice": 0,
-    "oneWeekPrice": null,
-    "oneMonthPrice": null,
-    "threeMonthPrice": null,
-    "sixMonthPrice": null,
-    "nodeGroupDatacenters": []
-  },
-  {
     "id": "Tesla V100-PCIE-16GB",
     "displayName": "Tesla V100",
     "memoryInGb": 16,
@@ -670,7 +652,7 @@
     "id": "Tesla V100-SXM2-16GB",
     "displayName": "V100 SXM2",
     "memoryInGb": 16,
-    "maxGpuCount": 4,
+    "maxGpuCount": 8,
     "secureCloud": false,
     "communityCloud": true,
     "securePrice": 0,
